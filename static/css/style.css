@@ -1,7 +1,7 @@
 @font-face {
     font-family: "a";
     /*中文字体*/
-    src: url();
+    src: url(../fonts/NotoSansSC-Regular.otf);
     font-display: swap;
 }
 
@@ -61,7 +61,7 @@ a:focus {
 html[data-theme="Dark"] {
     
     --main_text_color: #fff;
-    --gradient:linear-gradient(120deg, rgb(133, 62, 255), #f76cc6 30%, rgb(255, 255, 255) 60%);
+    --gradient: linear-gradient(120deg, #a2d1ff, #ffffff 30%, #41d1ff 60%);
     --purple_text_color: #747bff;
     --text_bg_color: rgb(26, 4, 48);
     --item_bg_color: rgb(19, 20, 24);
@@ -97,7 +97,7 @@ body {
 
 }
 
-#zyyo-loading {
+#ssj-loading {
     background: radial-gradient(white, #d8eaff);
     background-size: 100%;
     background-position: center;
@@ -117,7 +117,7 @@ body {
 
 
 
-#zyyo-loading-center {
+#ssj-loading-center {
     height: 150px;
     width: 150px;
     position: relative;
@@ -146,7 +146,7 @@ body {
 
 
 
-.zyyo-filter {
+.ssj-filter {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -157,7 +157,7 @@ body {
    
 }
 
-.zyyo-main {
+.ssj-main {
     width: 100%;
     margin: 0 auto;
     transition: transform 0.5s ease;
@@ -168,7 +168,7 @@ body {
 }
 
 
-.zyyo-left {
+.ssj-left {
     overflow-y: scroll;
     width: 230px;
     height: 100vh;
@@ -182,7 +182,7 @@ body {
 }
 
 
-.zyyo-left::-webkit-scrollbar {
+.ssj-left::-webkit-scrollbar {
     display: none;
 }
 
@@ -294,7 +294,7 @@ body {
 
 
 
-.zyyo-right {
+.ssj-right {
     width: calc(100% - 230px);
     display: flex;
     padding: 20px;
@@ -330,6 +330,7 @@ body {
 
 .gradientText {
 
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%;
@@ -637,7 +638,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .zyyo-left {
+    .ssj-left {
         display: none;
     }
 
@@ -670,7 +671,7 @@ footer {
 
 
 
-    .zyyo-right {
+    .ssj-right {
         width: 100%;
     }
 
@@ -788,12 +789,6 @@ footer {
 
 
 
-
-
-
-
-
-
 .onoffswitch {
     position: relative;
     width: 38px;
@@ -801,6 +796,7 @@ footer {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 }
 
 .onoffswitch-checkbox {
